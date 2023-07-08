@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recruitment Solution App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://kit.fontawesome.com/a08d1762db.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome to the Recruitment Solution App</h1>
+  </header>
+
+  <div class="container">
+    <section id="features">
+      <h2>Key Features</h2>
+      <!-- Add content about the key features and benefits -->
+    </section>
+
+    <section id="login">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <!-- Add input fields for company login -->
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit">Login</button>
+      </form>
+    </section>
+
+    <section id="register">
+      <h2>Register</h2>
+      <form id="registerForm">
+        <!-- Add input fields for company registration -->
+        <input type="text" id="companyName" placeholder="Company Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit">Register</button>
+      </form>
+    </section>
+
+    <section id="candidateSearch">
+      <h2>Candidate Search</h2>
+      <div class="search-bar">
+        <input type="text" id="location" placeholder="Location">
+        <input type="text" id="jobRole" placeholder="Job Role">
+        <button id="searchBtn" onclick="searchCandidates()"><i class="fas fa-search"></i></button>
+      </div>
+
+      <div id="candidateList">
+        <!-- List of fetched candidates will be dynamically populated here -->
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
